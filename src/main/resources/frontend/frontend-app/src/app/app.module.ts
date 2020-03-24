@@ -12,7 +12,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientService} from "./service/http-client.service";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { NgbdButtonsCheckbox } from './components/button-checkbox/button-checkbox.component';
-import { SearchboxComponent } from './components/searchbox/searchbox.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { SearchboxComponent } from './components/searchbox/searchbox.component';
     HotelListComponent,
     HotelListItemComponent,
     NgbdButtonsCheckbox,
-    SearchboxComponent,
   ],
   imports: [
     BrowserModule,
