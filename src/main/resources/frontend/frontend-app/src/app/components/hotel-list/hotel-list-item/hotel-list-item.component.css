@@ -1,6 +1,4 @@
-
 .hotel-item {
-    margin-top: 1%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -12,7 +10,11 @@
 .no-padding {
     padding: 0;
 }
-.row{
+.row-options {
+    margin-right: 1%;
+    margin-bottom: 7%;
+}
+.row, .row-options{
     padding-top: 1%;
 }
 .price-text {
@@ -20,30 +22,22 @@
 }
 
 .name-text {
-    margin-right: 1%; 
-    font-size: 1rem;
+    margin-right: 1%;
+    font-size: 0.8rem;
 }
 
 .star {
-    position: relative;
-    display: inline-block;
-    font-size: 1rem;
-    color: #d3d3d3;
-}
-
-.full {
-    color: #f6ab3f;
-}
-
-.half {
-    position: absolute;
-    display: inline-block;
-    overflow: hidden;
-    color: #f6ab3f;
+    font-size: 0.8rem;
 }
 
 .badge {
     font-size: 0.8rem;
+    width:111%;
+    height: 1.5rem;
+}
+
+.badge .badge-pill {
+  font-size: 0.8rem;
 }
 
 .badge-warning {
@@ -59,11 +53,25 @@
     margin-right: 2%;
 }
 
+.badge-successs {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.badge-warningg {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+.badge-dangerr {
+  color: #fff;
+  background-color: #dc3545;
+}
+
 .badge.badge-pill{
-    width: 5.2vw;
-    height: 5.2vh;
     font-size: 1.4vw;
 }
+
 .fa.fa-location-arrow {
     width: 3vw;
     height: 3vh;
@@ -77,53 +85,92 @@
     font-size: 1rem;
 }
 
+.rating {
+    padding-top: 1%;
+}
+
 @media (min-width: 576px) and ( max-width: 768px) {
-.justify-content{ font-size: 1.2rem; }
-.city , .rating, .price{ font-size: 1.4rem; }
-.name-text, .star{font-size: 1.8rem;}
+.justify-content{ font-size: 1rem; }
+.city , .rating, .price{ font-size: 1rem; }
+.rating { line-height: 1.5; }
+.name-text, .star{font-size: 1.2rem;}
 .badge.badge-pill{
-    width: 13vw;
-    height: 6vh;
-    font-size: 3.5vw;
-    }
+    height: 3vh;
+    font-size: 2vw;
+    width: 100%;
+}
 .fa.fa-location-arrow {
     width: 3vw;
     height: 5vh;
-    }
 }
+}
+
+@media (min-width: 200px)  and ( max-width: 380px){
+
+    .badge.badge-pill{
+        font-size: 3vw;
+        height: 1rem;
+        width: 210%;
+        }
+
+    }
+
+@media (min-width: 380px)  and ( max-width: 575px){
+
+        .badge.badge-pill{
+            font-size: 3vw;
+            height: 1.2rem;
+            width: 124%;
+        }
+
+}
+
 
 @media (min-width: 200px)  and ( max-width: 575px){
 .justify-content{ font-size: 0.85rem; }
 .city , .rating, .price{ font-size: 0.95rem; }
 .name-text, .star{font-size: 1.2rem;}
-.badge.badge-pill{
-    width: 8vw;
-    height: 2.5vh;
-    font-size: 2vw;
-    }
 .fa.fa-location-arrow {
     width: 4vw;
     height: 2vh;
     }
 }
-@media (min-width: 768px)  and ( max-width: 991px) {
-.justify-content, .city { font-size: 1.05rem; }
-.rating, .price { font-size: 1rem;}
-.name-text, .star{font-size: 1.4rem;}
-.badge.badge-pill{
-    width: 5.5vw;
-    height: 4vh;
-    font-size: 1.7vw;
+
+@media (max-width: 768px){
+    .center-image{
+        text-align: center;
     }
 }
 
-@media (min-width: 992px)  and ( max-width: 1999px) {
-.justify-content, .rating, .price, .city { font-size: 1.2rem; }
-.name-text, .star{font-size: 2rem;}
+@media (min-width: 768px)  and ( max-width: 940px) {
+    .badge.badge-pill{
+        padding-right: 25px;
+        }
+}
+@media (min-width: 768px)  and ( max-width: 991px) {
+.justify-content { font-size: 1.05rem; }
+.city { font-size: 0.85rem; }
+.rating, .price { font-size: 0.85rem;}
+.rating { line-height: 1.8; }
+.name-text, .star{font-size: 1.4rem;}
 .badge.badge-pill{
-    width: 7vw;
-    height: 5vh;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
+    width: 200%;
+    height: 1rem;
+    }
+.center-image{
+    text-align: center;
+}
+}
+
+@media (min-width: 992px)  and ( max-width: 1199px) {
+.justify-content, .rating, .price, .city { font-size: 1rem; }
+.rating{ line-height: 1.7;}
+.name-text, .star{font-size: 1.5rem;}
+.badge.badge-pill{
+    font-size: 1.1vw;
+    width: 180%;
+    height: 1.1rem;
     }
     .fa.fa-location-arrow {
         width: 2vw;
@@ -131,16 +178,82 @@
         }
 }
 @media (min-width: 1200px) {
-    .justify-content{ font-size: 1.2rem; }
-    .rating, .price, .city { font-size: 1.4rem; }
-    .name-text, .star {font-size: 2rem;}
+    .justify-content{ font-size: 1rem; }
+    .price, .city { font-size: 1rem; }
+    .rating { font-size: 1rem }
+    .name-text, .star {font-size: 1.2rem;}
     .badge.badge-pill{
-        width: 6vw;
-        height: 5vh;
-        font-size: 1.5vw;
+        font-size: 0.9vw;
         }
         .fa.fa-location-arrow {
-            width: 1.7vw;
+            width: 1vw;
             height: 4vh;
             }
+}
+
+.img-fluid {
+    max-width: 96%;
+}
+
+@media (min-width: 1650px) {
+    .img-fluid{
+        max-width: 13.5vw;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1400px) {
+    .medium-size-text{
+        padding-left: 7%;
+    }
+
+    .medium-size-image{
+        max-width: 17.5vw;
+    }
+}
+
+
+
+@media (min-width: 1400px) and (max-width: 1525px) {
+    .badge.badge-pill{
+        height: 1.2rem;
+    }
+    .price {
+        font-size: 0.9rem;
+    }
+    .fa.fa-location-arrow {
+        width: 1.2vw;
+        height: 4vh;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .justify-content, .rating, .city, .price{
+        font-size: 0.9rem;
+    }
+    .rating{
+        line-height: 2;
+    }
+    .badge.badge-pill{
+        width: 150%;
+        height: 1rem;
+    }
+    .fa.fa-location-arrow {
+        width: 1.5vw;
+        height: 3vh;
+    }
+}
+
+.row.hotel-item
+{
+   padding: 0%;
+   margin-bottom: 1%;
+}
+
+h5.name-text:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+img.img-fluid.medium-size-image {
+    cursor: pointer;
 }
